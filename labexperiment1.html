@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="University Student Activity Management Portal">
+<title>Student Activity Portal</title>
+<style>
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6fb;
+            color: #333;
+ }
+ header {
+            background-color: #243b64;
+            color: white;
+            text-align: center;
+            padding: 25px;
+ }
+nav {
+            background-color: #162747;
+            padding: 15px;
+            text-align: center;
+ }
+ nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+ }
+ nav a:hover {
+            color: yellow;
+        }
+main {
+            width: 85%;
+            margin: auto;
+        }
+section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+  }
+ h2 {
+            color: #243b64;
+        }
+
+ article {
+            background-color: #eef2fa;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 8px;
+}
+ aside {
+            background-color: #fff3cd;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 5px solid orange;
+        }
+ form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+ input, select, textarea {
+            padding: 10px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+ fieldset {
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            padding: 12px;
+        }
+ fieldset label {
+            display: block;
+            margin: 8px 0;
+        }
+ button {
+            background-color: #243b64;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #162747;
+        }
+
+        /* Keyboard focus */
+        a:focus-visible,
+        input:focus-visible,
+        select:focus-visible,
+        textarea:focus-visible,
+        button:focus-visible {
+            outline: 3px solid orange;
+            outline-offset: 3px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #243b64;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+         </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Student Activity Management Portal</h1>
+        <p>Explore Events | Participate | Learn | Grow</p>
+    </header>
+    <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#activities">Activities</a>
+        <a href="#register">Register</a>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Welcome Students!</h2>
+            <p>
+                Welcome to our University Student Activity Portal.
+                Here students can explore upcoming events,
+                participate in activities and register online.
+            </p>
+
+        </section>
+        <section id="events">
+
+            <h2>Upcoming Events</h2>
+
+            <article>
+                <h3>Technical Fest</h3>
+                <p>Date: December 10, 2026</p>
+                <p>Participate in coding competitions and workshops.</p>
+            </article>
+
+            <article>
+                <h3>Cultural Fest</h3>
+                <p>Date: December 15, 2026</p>
+                <p>Show your talent through dance, music and drama.</p>
+            </article>
+
+            <article>
+                <h3>Sports Meet</h3>
+                <p>Date: December 20, 2026</p>
+                <p>Participate in indoor and outdoor sports.</p>
+            </article>
+
+        </section>
+        <section id="activities">
+
+            <h2>University Activities</h2>
+
+            <ul>
+                <li>Technical Workshops</li>
+                <li>Hackathons and Coding Challenges</li>
+                <li>Sports Competitions</li>
+                <li>Cultural Festivals</li>
+                <li>Dance and Music Competitions</li>
+                <li>Photography Competitions</li>
+                <li>Robotics and Innovation Clubs</li>
+            </ul>
+        </section>
+        <aside>
+
+            <h2>Important Notice</h2>
+
+            <p>
+                Students are requested to register
+                before the event deadline.
+            </p>
+
+        </aside>
+
+        <!-- Registration Form -->
+        <section id="register">
+
+            <h2>Student Registration Form</h2>
+
+            <form action="#" method="post">
+
+                <!-- Text fields -->
+                <label for="name">Student Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <label for="roll">Roll Number:</label>
+                <input type="text" id="roll" name="roll"
+                       placeholder="Enter your roll number" required>
+
+                <!-- Department dropdown -->
+                <label for="department">Department:</label>
+
+                <select id="department" name="department" required>
+
+                    <option value="">Select Department</option>
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="MECH">Mechanical</option>
+                    <option value="CIVIL">Civil</option>
+
+                </select>
+
+                <!-- Year dropdown -->
+                <label for="year">Year of Study:</label>
+
+                <select id="year" name="year" required>
+
+                    <option value="">Select Year</option>
+                    <option value="1">First Year</option>
+                    <option value="2">Second Year</option>
+                    <option value="3">Third Year</option>
+                    <option value="4">Fourth Year</option>
+
+                </select>
+
+                <!-- Radio buttons -->
+                <fieldset>
+
+                    <legend>Gender:</legend>
+
+                    <label>
+                        <input type="radio" name="gender"
+                               value="male" required>
+                        Male
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender"
+                               value="female">
+                        Female
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender"
+                               value="other">
+                        Other
+                    </label>
+
+                </fieldset>
+
+                <!-- Checkboxes -->
+                <fieldset>
+
+                    <legend>Areas of Interest:</legend>
+
+                    <label>
+                        <input type="checkbox" name="interest"
+                               value="technical">
+                        Technical Events
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interest"
+                               value="sports">
+                        Sports
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interest"
+                               value="cultural">
+                        Cultural Events
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interest"
+                               value="music">
+                        Music and Dance
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interest"
+                               value="photography">
+                        Photography
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interest"
+                               value="social">
+                        Community Service
+                    </label>
+
+                </fieldset>
+
+                <!-- Textarea -->
+                <label for="reason">
+                    Why do you want to participate?
+                </label>
+
+                <textarea id="reason" name="reason"
+                          rows="4"
+                          placeholder="Enter your reason here"></textarea>
+
+                <!-- Submit button -->
+                <button type="submit">Register Now</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>&copy; 2026 Student Activity Management Portal</p>
+        <p>Contact: activities@university.edu</p>
+
+    </footer>
+
+</body>
+
+</html>
+
+
+      

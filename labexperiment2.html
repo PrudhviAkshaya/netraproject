@@ -1,0 +1,183 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Management</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+        }
+
+        header {
+            background-color: #087e8b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #034f59;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #087e8b;
+        }
+
+        form {
+            max-width: 450px;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #087e8b;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #034f59;
+        }
+
+        input:focus, select:focus, textarea:focus, button:focus, a:focus {
+            outline: 3px solid orange;
+        }
+
+        footer {
+            background-color: #034f59;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>City Care Hospital</h1>
+        <p>Your Health Is Our Priority</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#appointment">Appointment</a>
+    </nav>
+
+    <main>
+
+        <section id="services">
+            <h2>Our Hospital Services</h2>
+            <ul>
+                <li>General Medicine</li>
+                <li>Cardiology</li>
+                <li>Dental Care</li>
+                <li>Emergency Services</li>
+            </ul>
+        </section>
+
+        <section id="doctors">
+            <h2>Our Doctors</h2>
+
+            <article>
+                <h3>Dr. Rahul</h3>
+                <p>Specialization: Cardiologist</p>
+            </article>
+
+            <article>
+                <h3>Dr. Priya</h3>
+                <p>Specialization: General Physician</p>
+            </article>
+
+            <article>
+                <h3>Dr. Arjun</h3>
+                <p>Specialization: Dentist</p>
+            </article>
+        </section>
+
+        <section id="appointment">
+            <h2>Patient Appointment Form</h2>
+
+            <form action="#" method="get">
+
+                <label for="name">Patient Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"
+                       pattern="[0-9]{10}"
+                       placeholder="10 digit number" required>
+
+                <label for="date">Appointment Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="doctor">Select Doctor:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="">Choose a doctor</option>
+                    <option>Dr. Rahul</option>
+                    <option>Dr. Priya</option>
+                    <option>Dr. Arjun</option>
+                </select>
+
+                <label for="message">Additional Message:</label>
+                <textarea id="message" name="message"
+                          rows="4"
+                          placeholder="Enter your message"></textarea>
+
+                <button type="submit">Book Appointment</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 City Care Hospital. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
